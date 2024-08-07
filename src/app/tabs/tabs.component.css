@@ -1,0 +1,20 @@
+.tabs {
+  border: 1px solid #ccc;
+}
+.tab-titles {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  border-bottom: 1px solid #ccc;
+}
+.tab-titles li {
+  padding: 10px 20px;
+  cursor: pointer;
+}
+.tab-titles li.active {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-bottom: none;
+  font-weight: bold;
+}

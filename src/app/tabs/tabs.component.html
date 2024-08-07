@@ -1,0 +1,9 @@
+<div class="tabs">
+  <ul class="tab-titles">
+    <li *ngFor="let tab of tabs; let i = index" [class.active]="tab.active">
+      <span (click)="selectTab(tab)">{{ tab.title }}</span>
+      <span class="close-tab" (click)="closeTab(tab, i)">&times;</span>
+    </li>
+  </ul>
+  <ng-content></ng-content>
+</div>
